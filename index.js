@@ -2,7 +2,7 @@ const { PeerServer } = require('peer');
 
 const clients = new Set();
 const peerServer = PeerServer({ port: 9000, path: '/' }, (server) => {
-  console.log('Server started', server);
+  console.log('Server started!');
 });
 
 peerServer.on('connection', (client) => {
